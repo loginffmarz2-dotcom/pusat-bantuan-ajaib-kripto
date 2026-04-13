@@ -1,0 +1,39 @@
+      <div class="cta-contact-info">
+        <div class="contact-buttons">
+          <a href="tel:0851-2222-2210" class="contact-button phone-button"><span class="button-icon">📞</span> Call Center Ajaib Kripto</a>
+          <a href="https://wa.me/6285122222210" class="contact-button whatsapp-button"><span class="button-icon">💬</span> WhatsApp Ajaib Kripto</a>
+        </div>
+      </div>
+</oʻ>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column"><h4>Ajaib Kripto</h4><p>Platform jual-beli aset kripto terpercaya, berizin & diawasi Bappebti.</p></div>
+      <div class="footer-column"><h4>Kontak Layanan</h4><ul><li>📞 0851-2222-2210</li><li>💬 0851-2222-2210</li><li>✉️ support@ajaibkripto.co.id</li></ul></div>
+      <div class="footer-column"><h4>Jam Layanan</h4><p>Setiap hari, 24 jam non-stop.</p></div>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom"><p>© 2025 Ajaib Kripto – PT Ajaib Teknologi Indonesia | Berizin & diawasi Bappebti</p></div>
+  </footer>
+  <script>
+    document.querySelector('.nav__button').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('#contact-section').scrollIntoView({ behavior: 'smooth' });
+    });
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        const active = q.classList.contains('active');
+        document.querySelectorAll('.faq-question').forEach(qq => {
+          qq.classList.remove('active');
+          qq.nextElementSibling.classList.remove('active');
+        });
+        if (!active) {
+          q.classList.add('active');
+          answer.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
